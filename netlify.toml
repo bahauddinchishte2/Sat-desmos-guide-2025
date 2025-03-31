@@ -1,0 +1,9 @@
+[build]
+  command = "npm run docs:build"
+  publish = "docs/.vitepress/dist"
+
+# Handle SPA redirects
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

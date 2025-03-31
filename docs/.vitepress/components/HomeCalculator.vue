@@ -10,7 +10,7 @@ onMounted(() => {
     if (typeof Desmos !== 'undefined' && calculatorElement.value) {
       const calculator = Desmos.GraphingCalculator(calculatorElement.value, {
         expressions: true,
-        settingsMenu: true,
+        settingsMenu: false,
         zoomButtons: true,
         border: false,
         lockViewport: false,
@@ -46,7 +46,7 @@ onMounted(() => {
 <template>
   <div class="home-calculator-wrapper">
     <div class="calculator-header">
-      <span>How many solutions does this equation has?</span>
+      <span>How many solutions does this system have?</span>
     </div>
     <div ref="calculatorElement" class="home-calculator"></div>
   </div>
